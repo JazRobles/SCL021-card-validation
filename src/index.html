@@ -7,7 +7,21 @@
   </head>
   <body>
     <header></header>
-    <main></main>
+
+
+    <main>
+
+      <form method="post" action="#">
+
+        <label for="numero">Numero</label>
+        <input class="validar" id="Ncard" type="text" placeholder="xxxx xxxx xxxx xxxx" autocomplete="off" maxlength="16" name="numeros" required="" pattern="[0-9]+">
+        <br>
+        <label for="text">Nombre</label>
+        <input  id="Nombre" type="text" placeholder="Nombre cliente" required="" pattern="[Nombres-apellido]+">
+          <button id="btn" data-response="guardado">Enviar</button>
+        </form>
+
+    </main>
     <footer></footer>
     <script src="index.js" type="module"></script>
   </body>
