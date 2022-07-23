@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tarjeta de crédito válida</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="cabeza"> <!-------imagen de logo--------->
+      <div style="text-align: center;">
+        <img src="./ORIGEN.png" class="logo">
+      </div>
+  
+      
+    </header>
+    <section>
+    <div class="inicio"> <!--------introduccion de pagina al registro de pagina--------->
+      <br>
+      <h3>En origen te invitamos a registrar tu tarjeta<br>
+      para realizar tu compra</h3>
+      <a href="www.origen.com">www.origen.com</a>
+       </div> 
+      </section>
+
+<div class="letras"> <!----------titulo de pagina------------->
+<h1 class="letras">Productos saludables</h1>
+</div>
+
+
+    <main>
+      <div class="datos-formulario">
+      
+        <h1>datos tarjeta</h1><br>
+        <label for="numero">Numero</label>
+        <input class="validar" id="Ncard" type="text" placeholder="xxxx xxxx xxxx xxxx" autocomplete="off" maxlength="16" name="numeros" required="" pattern="[0-9]+"><br>
+        <br>
+        <label for="uname">Nombre</label>
+        <input  id="uname" type="text" minlength="5" maxlength="30" required pattern="[A-Za-z]+"/><br>
+      
+        <button id="btnValidar" type="submit" class="btn-enviar">Enviar</button>
+      </div>
+  
+      <p class="final"  id="validacion"></p>
+    </main>
+    <footer class="footer">gracias por visitar nuestra pagina web</footer> 
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
