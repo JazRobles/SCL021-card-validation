@@ -33,10 +33,12 @@ function btnValid() {
         document.getElementById('validacion').innerHTML = 'Tu tarjeta es válida';
         document.getElementById('Ncard').value = validator.maskify(creditCardNumber);
         alert (" Tarjeta Valida")
+        
     }
         else {
         document.getElementById('validacion').innerHTML = 'Tu tarjeta es inválida, vuelve a intentarlo';
         document.getElementById('Ncard').value = validator.maskify(creditCardNumber);
         alert (" Tarjeta Invalida, vuelve a intentarlo")
+        
       }
 }
