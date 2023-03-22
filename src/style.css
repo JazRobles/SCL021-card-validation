@@ -11,17 +11,6 @@ html{
 
 }
 
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-  body {
-    margin: 0;
-   
-   
-   
-
-   
-  }
-}
-
 /* body{
     width: 100%;
     height: 50%;
@@ -36,6 +25,7 @@ html{
   .character-container {
     width: 100%;
      padding-left: 20%; 
+     orientation: landscape;
   }} 
         
         .logo{
@@ -47,10 +37,10 @@ html{
     
     .inicio{
       font-family:cursive;
-    color:white;
+    color:rgb(189, 112, 61);
      margin-left: 38%;
 margin-top: 5%;
-    
+      position: relative;
     
     
     }
@@ -60,9 +50,9 @@ margin-top: 5%;
     
       .letras{
         font-family:cursive;
-        -webkit-text-stroke: 2px black;
+        -webkit-text-stroke: 2px hsla(4, 89%, 18%, 0.9);
         /* color: transparent; */
-      color:white;
+      color:rgb(189, 112, 61);
       text-align: center;
       opacity: .8;
      
@@ -82,7 +72,7 @@ margin-top: 5%;
   background: url(./img-card.png)no-repeat 0px 0px;
   background-size:60vh;
   border-radius: 5%;
-  padding: 30px 33px 67px;
+  padding: 20px 25px 45px;
  
   margin: auto;
   background-position: center;
@@ -92,11 +82,17 @@ margin-top: 5%;
   align-items: center;
   font-family:cursive;
   color: white;
+  position: relative;
+
+  
+   
+  
+top: -45px;
 }
     
 .letra-card{
    
-      color:white;
+      color:rgb(189, 112, 61);
       font: weight 5px; 
    font-size:x-large;
    font-family:cursive;
@@ -111,6 +107,20 @@ margin-top: 5%;
 
     }
 
+
+    input:invalid {
+      border: 2px dashed rgb(37, 20, 20);
+    }
+    
+    input:invalid:required {
+      background-image: linear-gradient(to right, rgb(254, 254, 254), rgb(174, 217, 236));
+    }
+    
+    input:valid {
+      border: 2px solid black;
+    }
+    
+
     
     .footer{
       text-align: center;
@@ -123,8 +133,11 @@ margin-top: 5%;
     .final{
       color:lightblue;
       text-align: center;
+      font-size:large;
+      
     }
 
+    
     .btn-enviar{
 background-color:azure;
 opacity: .9;
@@ -133,12 +146,12 @@ height: 4vh;
 width: 10vh;
 font-family:cursive;
 font-weight: 100;
-
+border-radius: 5%;
 
     }
 
     .btn-enviar:hover{
-background-color:coral;
+background-color:rgb(141, 216, 223);
 
     }
 
@@ -152,80 +165,80 @@ background-color:coral;
 
 
 .origen {
-  color: hsla(38, 61%, 55%, 0.9);
+  color: hsla(4, 89%, 18%, 0.9);
   font: normal 140px Varela Round, sans-serif;
   height: 120px;
   letter-spacing: 5px;
   margin: -13px 0 0 0;
   display: flex;
   justify-content: space-around;
-
+  opacity: .8;
 
   /* text-transform: uppercase; */
 
   /* width: 1%; */
-  animation: move linear 2000ms infinite;  
+  animation: move linear 4000ms infinite;  
 }
 
 @keyframes move {
   0% {
     text-shadow:
-      4px -4px 0 hsla(0, 100%, 50%, 1), 
-      3px -3px 0 hsla(0, 100%, 50%, 1), 
-      2px -2px 0 hsla(0, 100%, 50%, 1), 
-      1px -1px 0 hsla(0, 100%, 50%, 1),
-      -4px 4px 0 hsla(180, 100%, 50%, 1), 
-      -3px 3px 0 hsla(180, 100%, 50%, 1), 
-      -2px 2px 0 hsla(180, 100%, 50%, 1), 
-      -1px 1px 0 hsla(180, 100%, 50%, 1)
+      4px -4px 0 rgb(189, 112, 61), 
+      3px -3px 0 rgb(189, 112, 61), 
+      2px -2px 0 rgb(189, 112, 61) 
+      1px -1px 0 rgb(189, 112, 61)
+      -4px 4px 0 rgb(240, 222, 192), 
+      -3px 3px 0 rgb(240, 222, 192), 
+      -2px 2px 0 rgb(240, 222, 192), 
+      -1px 1px 0 rgb(240, 222, 192)
     ;
   }
   25% {    
     text-shadow:      
-      -4px -4px 0 hsla(180, 100%, 50%, 1), 
-      -3px -3px 0 hsla(180, 100%, 50%, 1), 
-      -2px -2px 0 hsla(180, 100%, 50%, 1), 
-      -1px -1px 0 hsla(180, 100%, 50%, 1),
-      4px 4px 0 hsla(0, 100%, 50%, 1), 
-      3px 3px 0 hsla(0, 100%, 50%, 1), 
-      2px 2px 0 hsla(0, 100%, 50%, 1), 
-      1px 1px 0 hsla(0, 100%, 50%, 1)      
+      -4px -4px 0 rgb(240, 222, 192), 
+      -3px -3px 0 rgb(240, 222, 192), 
+      -2px -2px 0 rgb(240, 222, 192), 
+      -1px -1px 0 rgb(240, 222, 192),
+      4px 4px 0 rgb(189, 112, 61), 
+      3px 3px 0 rgb(189, 112, 61), 
+      2px 2px 0 rgb(189, 112, 61), 
+      1px 1px 0 rgb(189, 112, 61)
     ;
   }
   50% {
     text-shadow:
-      -4px 4px 0 hsla(0, 100%, 50%, 1), 
-      -3px 3px 0 hsla(0, 100%, 50%, 1), 
-      -2px 2px 0 hsla(0, 100%, 50%, 1), 
-      -1px 1px 0 hsla(0, 100%, 50%, 1),
-      4px -4px 0 hsla(180, 100%, 50%, 1), 
-      3px -3px 0 hsla(180, 100%, 50%, 1), 
-      2px -2px 0 hsla(180, 100%, 50%, 1), 
-      1px -1px 0 hsla(180, 100%, 50%, 1)
+      -4px 4px 0 rgb(189, 112, 61), 
+      -3px 3px 0 rgb(189, 112, 61), 
+      -2px 2px 0 rgb(189, 112, 61), 
+      -1px 1px 0 rgb(189, 112, 61),
+      4px -4px 0 rgb(240, 222, 192), 
+      3px -3px 0 rgb(240, 222, 192), 
+      2px -2px 0 rgb(240, 222, 192), 
+      1px -1px 0 rgb(240, 222, 192)
     ;
   }
   75% {
     text-shadow:
-      4px 4px 0 hsla(180, 100%, 50%, 1), 
-      3px 3px 0 hsla(180, 100%, 50%, 1), 
-      2px 2px 0 hsla(180, 100%, 50%, 1), 
-      1px 1px 0 hsla(180, 100%, 50%, 1),
-      -4px -4px 0 hsla(0, 100%, 50%, 1), 
-      -3px -3px 0 hsla(0, 100%, 50%, 1), 
-      -2px -2px 0 hsla(0, 100%, 50%, 1), 
-      -1px -1px 0 hsla(0, 100%, 50%, 1)      
+      4px 4px 0 rgb(240, 222, 192), 
+      3px 3px 0 rgb(240, 222, 192), 
+      2px 2px 0 rgb(240, 222, 192), 
+      1px 1px 0 rgb(240, 222, 192),
+      -4px -4px 0 rgb(189, 112, 61), 
+      -3px -3px 0 rgb(189, 112, 61), 
+      -2px -2px 0 rgb(189, 112, 61), 
+      -1px -1px 0 rgb(189, 112, 61)      
     ;
   }
   100% {
     text-shadow:
-      4px -4px 0 hsla(0, 100%, 50%, 1), 
-      3px -3px 0 hsla(0, 100%, 50%, 1), 
-      2px -2px 0 hsla(0, 100%, 50%, 1), 
-      1px -1px 0 hsla(0, 100%, 50%, 1),
-      -4px 4px 0 hsla(180, 100%, 50%, 1), 
-      -3px 3px 0 hsla(180, 100%, 50%, 1), 
-      -2px 2px 0 hsla(180, 100%, 50%, 1), 
-      -1px 1px 0 hsla(180, 100%, 50%, 1)
+      4px -4px 0 rgb(189, 112, 61), 
+      3px -3px 0 rgb(189, 112, 61), 
+      2px -2px 0 rgb(189, 112, 61), 
+      1px -1px 0 rgb(189, 112, 61),
+      -4px 4px 0 rgb(240, 222, 192), 
+      -3px 3px 0 rgb(240, 222, 192), 
+      -2px 2px 0 rgb(240, 222, 192), 
+      -1px 1px 0 rgb(240, 222, 192)
     ;
   }  
 }
