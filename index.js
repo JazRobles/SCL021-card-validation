@@ -28,15 +28,32 @@ function btnValid() {
 
   /* a través de una condicional aplicamos función validator a nuestra variable creditCardNumber y en simultáneo
   llamamos a la función Maskify para retornar string enmascarado */
+  //declaro constante validar
 
+    //let inputvalue, lo use para que no permita quedar el input en blanco
+    let inputvalue = document.getElementById("Ncard").value
+    if (inputvalue === "") {
+        alert("ingrese un número");
+        document.location.reload();
+    }
+  
+ 
+
+
+
+  
+  
     if (validator.isValid(creditCardNumber)==true) {
         document.getElementById('validacion').innerHTML = 'Tu tarjeta es válida';
         document.getElementById('Ncard').value = validator.maskify(creditCardNumber);
-        alert (" Tarjeta Valida")
+       
+        //  alert (" Tarjeta Valida")
+        
     }
         else {
         document.getElementById('validacion').innerHTML = 'Tu tarjeta es inválida, vuelve a intentarlo';
         document.getElementById('Ncard').value = validator.maskify(creditCardNumber);
-        alert (" Tarjeta Invalida, vuelve a intentarlo")
+        // alert (" Tarjeta Invalida, vuelve a intentarlo")
+        
       }
 }
