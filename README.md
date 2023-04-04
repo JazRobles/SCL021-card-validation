@@ -13,6 +13,18 @@ Ver el resultado si es válido o no.
  No debe poder ingresar un campo vacío.
 
 
+
+
+
+<img
+  style="width: 100%; margin: auto; display: block;"
+  class="vidyard-player-embed"
+  src="https://play.vidyard.com/Wa5boNNfCvARormkWjrPRF.jpg"
+  data-uuid="Wa5boNNfCvARormkWjrPRF"
+  data-v="4"
+  data-type="inline"
+/>
+
 ![card prototipo](https://user-images.githubusercontent.com/108153200/180581897-2cd39d0a-29f9-47b5-a761-b25e0d44ad69.png)
 
 ### UX 
